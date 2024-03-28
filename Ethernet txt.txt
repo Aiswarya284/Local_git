@@ -9,3 +9,5 @@ The first pattern of the Ethernet Protocol frame is 7-Bytes of Preamble where al
 However, present high-speed-based Ethernet doesn’t require Preamble for protecting the frame bits. Preamble specifies the receiver that frame is coming & lets the receiver lock on the data stream before the genuine frame starts.The start of frame delimiter (SFD) is a 1-Byte field with 10101011 values that indicates that upcoming bits are the beginning of the frame, which is the address of the destination. The start of the frame delimiter is mainly designed to split the pattern of the bit to the preamble & signal the beginning of the frame.
 
 Sometimes, the start of frame delimiter is considered as the main part of the preamble, so this is the main reason that Preamble is expressed as 8 Bytes in several places. The SFD gives a warning to stations that this is the final opportunity for synchronization.
+
+ethernet text not displayed in main branch until merge

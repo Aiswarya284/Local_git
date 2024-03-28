@@ -12,3 +12,4 @@ edit the main branch and additional branch
 updating the branch files for pull request and merge with main branch
 
 To see the changes modified in text file in git status in terminal
+branch text will not be updated to main branch until merge 
