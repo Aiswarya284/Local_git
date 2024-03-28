@@ -10,6 +10,7 @@ Users of this document are urged to heed warnings and cautions summarized at the
 electrical hazard warnings.
 edit the main branch and additional branch
 updating the branch files for pull request and merge with main branch
-
 To see the changes modified in text file in git status in terminal
 branch text will not be updated to main branch until merge 
+16.10 local git red lion edit 
+to send the data to local host
