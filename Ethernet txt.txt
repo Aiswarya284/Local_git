@@ -1,0 +1,11 @@
+Ethernet Protocol Frame Structure
+Generally, the structure of the Ethernet frame is defined within the IEEE 802.3 standard. But there are numerous optional frame formats are being employed for Ethernet to expand the capacity of the protocol. The Early frame versions were very slow but the latest Ethernet versions operate at 10 Gigabits/sec. So this is the very fastest Ethernet version.
+
+The frame structure at the data link layer in the OSI model is almost the same for all Ethernet speeds. The structure of the frame simply adds headers & trailers in the region of the Layer 3 PDU (Protocol Data Unit) to summarize the message. The frame structure of Ethernet is shown below and it begins with the Preamble that functions at the physical layer
+
+Ethernet header includes both Source & Destination MAC address, after which the frame’s payload is present. The end field is Cyclical Redundancy Checking, used to notice the error. The following diagram shows the structure of the frame & fields.Preamble
+The first pattern of the Ethernet Protocol frame is 7-Bytes of Preamble where alternative 0’s and 1’s in this frame indicate the beginning of the frame & permit the sender & receiver to set up bit-level synchronization. At first, a Preamble in the above frame was introduced to permit for the few bits loss because of signal delays.
+
+However, present high-speed-based Ethernet doesn’t require Preamble for protecting the frame bits. Preamble specifies the receiver that frame is coming & lets the receiver lock on the data stream before the genuine frame starts.The start of frame delimiter (SFD) is a 1-Byte field with 10101011 values that indicates that upcoming bits are the beginning of the frame, which is the address of the destination. The start of the frame delimiter is mainly designed to split the pattern of the bit to the preamble & signal the beginning of the frame.
+
+Sometimes, the start of frame delimiter is considered as the main part of the preamble, so this is the main reason that Preamble is expressed as 8 Bytes in several places. The SFD gives a warning to stations that this is the final opportunity for synchronization.
